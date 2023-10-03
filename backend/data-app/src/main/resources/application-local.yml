@@ -1,0 +1,22 @@
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+
+spring:
+  application:
+    name: data-app
+  liquibase:
+    change-log: classpath:db/changelog/liquibase-changelog.xml
+  datasource:
+    url: jdbc:h2:mem:mydb
+    platform: h2
+    initialization-mode: always
+  h2:
+    console:
+      enabled: true
+  sql:
+    init:
+      mode: always
+
+server:
+  port: 8081

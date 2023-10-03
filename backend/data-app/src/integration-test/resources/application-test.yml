@@ -1,0 +1,17 @@
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+
+spring:
+  application:
+    name: aib-data
+  liquibase:
+    change-log: classpath:db/changelog/liquibase-changelog.xml
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:mydb
+    platform: h2
+
+eureka:
+  client:
+    enabled: false

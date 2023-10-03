@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" modified="2023-10-03T12:20:41.530Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="HREsvoMErKzkOmkesa5H" version="21.8.2" type="device">
+  <diagram name="Page-1" id="chBGo2svzKNZ8JQKZmjU">
+    <mxGraphModel dx="1372" dy="830" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jmHzjVtctvbvnxBBRBWs-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jmHzjVtctvbvnxBBRBWs-3" target="jmHzjVtctvbvnxBBRBWs-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jmHzjVtctvbvnxBBRBWs-3" value="Vue.js" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jmHzjVtctvbvnxBBRBWs-4" value="data-app" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jmHzjVtctvbvnxBBRBWs-5" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="460" y="120" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jmHzjVtctvbvnxBBRBWs-6" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="610" y="120" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jmHzjVtctvbvnxBBRBWs-9" value="MinIO" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="90" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jmHzjVtctvbvnxBBRBWs-10" value="Postgresql" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="450" y="90" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jmHzjVtctvbvnxBBRBWs-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="jmHzjVtctvbvnxBBRBWs-4" target="jmHzjVtctvbvnxBBRBWs-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jmHzjVtctvbvnxBBRBWs-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="jmHzjVtctvbvnxBBRBWs-4" target="jmHzjVtctvbvnxBBRBWs-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

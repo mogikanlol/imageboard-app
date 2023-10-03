@@ -1,0 +1,66 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.springframework.boot'
+    id 'io.freefair.lombok'
+}
+
+sourceSets {
+    integrationTest {
+        java {
+            compileClasspath += sourceSets.main.output
+            runtimeClasspath += sourceSets.main.output
+            srcDir file('src/integration-test/java')
+        }
+        resources.srcDir file('src/integration-test/resources')
+    }
+}
+
+
+test {
+    useJUnitPlatform()
+}
+
+configurations {
+    integrationTestImplementation.extendsFrom implementation
+    integrationTestRuntimeOnly.extendsFrom runtimeOnly
+}
+
+task integrationTest(type: Test) {
+    description = 'Runs integration tests.'
+    group = 'verification'
+
+    useJUnitPlatform()
+
+    outputs.upToDateWhen { false }
+    testClassesDirs = sourceSets.integrationTest.output.classesDirs
+    classpath = sourceSets.integrationTest.runtimeClasspath
+    shouldRunAfter test
+}
+
+ check.dependsOn integrationTest
+
+dependencies {
+    // https://stackoverflow.com/questions/67283934/spring-java-package-javax-validation-constraints-does-not-exist
+    implementation 'javax.validation:validation-api:2.0.1.Final'
+    implementation 'jakarta.persistence:jakarta.persistence-api:3.1.0'
+
+
+    implementation 'io.minio:minio:8.5.6'
+
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.liquibase:liquibase-core'
+
+    implementation 'org.postgresql:postgresql:42.6.0'
+
+
+//    implementation 'com.h2database:h2'
+    integrationTestImplementation 'com.h2database:h2'
+
+    integrationTestImplementation 'org.springframework.boot:spring-boot-starter-test'
+    integrationTestImplementation 'org.junit.jupiter:junit-jupiter-api'
+    integrationTestImplementation 'org.junit.jupiter:junit-jupiter-engine'
+}
