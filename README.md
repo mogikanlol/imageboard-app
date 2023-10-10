@@ -16,6 +16,13 @@ Simple Imageboard using Vue and SpringBoot
 ## Start
 All commands should be executed from the root project folder
 
+### Docker
+```console
+cd docker
+
+docker-compose up
+```
+
 ### Frontend
 ```console
 cd frontend
